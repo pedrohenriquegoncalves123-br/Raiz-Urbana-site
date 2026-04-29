@@ -2,7 +2,7 @@
     --color-font-primary: #0cba4b;
     --color-font-secondary: rgb(13, 155, 89);
     --color-hover: #09a241;
-    --background-suave: #d1fae5;
+    --background-suave: #e7fbf1;
     --color-font-preta: #0c0d12;
     --color-font-cinza: #4b5563;
     --color-font-cinza-fraco: #dfdfdfcf;
@@ -36,7 +36,9 @@ a {
 }
 
 .container {
+    max-width: 100%;
     width: 100%;
+    min-height: 100%;
     height: 100%;
     margin: 0 auto 0;
     padding: 0;
@@ -71,6 +73,7 @@ body {
 .cabecalho {
     background-color: var(--backgrounds-claros);
     width: 100%;
+    max-width: 1750px;
     height: 5em;
     margin: 0;
     text-align: center;
@@ -150,215 +153,325 @@ body {
 }
 
 
-.conteudo-site {
+.conteudo-principal {
     min-width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 7rem;
 }
 
-.sessao-inicio {
+.banner-pagina {
+    height: 35rem;
     max-width: 100%;
     width: 100%;
-    height: 47rem;
-    margin: 7rem auto 0;
-    background-image: linear-gradient(to top, #e9e9e9c8, #ecececcc), url('https://images.unsplash.com/photo-1756511332583-99fc0d4bf7cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxzb2xhciUyMHBhbmVscyUyMHN1c3RhaW5hYmxlJTIwZW5lcmd5JTIwZ3JlZW4lMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc3NjcwMzMyN3ww&ixlib=rb-4.1.0&q=80&w=1080');
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
+    background-color: var(--background-suave);
 }
 
-.container-inicio {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-h1 {
-    color: var(--color-textos-principais);
-    font-size: 5.5rem;
-    font-weight: 800;
-}
-
-p.subtitle {
-    width: 50%;
-    font-size: var(--tamamho-subtitulos);
-    color: var(--color-font-cinza);
-}
-
-.faixa-botoes {
-    width: 100%;
-    height: 10rem;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.nossos-servicos {
-    padding: 1.3rem 2rem;
-    font-size: 1.6rem;
-    background-color: var(--color-font-primary);
-    border-radius: 1rem;
-    color: var(--background-suave);
-}
-
-.nossos-servicos:hover {
-    background-color: var(--color-hover);
-}
-
-.fale-conosco-servicos {
-    padding: 1.3rem 2rem;
-    border: 2px solid var(--color-font-primary);
-    color: var(--color-font-primary);
-    border-radius: 1rem;
-    font-size: 1.6rem;
-}
-
-.fale-conosco:hover {
-    background-color: var(--color-bordas);
-}
-
-.sessao-sobre {
-    width: 100%;
-    height: 50rem;
-    text-align: center;
+.banner-pagina>.container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 0;
 }
 
-article.sobre {
+.title-banner {
+    max-width: 100%;
     width: 100%;
     height: fit-content;
-    margin-top: 10rem;
-    margin-bottom: 5rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
+.title-banner span {
+    font-size: 5rem;
+    color: var(--color-textos-principais);
+}
+
+.subtitle {
+    color: var(--color-font-cinza);
+    font-size: 1.8rem;
+    margin: 0;
+    width: 50%;
+    text-align: center;
+}
+
+.sessao-nossa-historia {
+    width: 100%;
+    max-width: 100%;
+    height: 50rem;
+    margin: 0 auto 10rem;
+}
+
+.sessao-nossa-historia>.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: 100%;
+}
+
+.container-nossa-historia {
+    padding: 5rem 0 0;
+    width: 50%;
+    height: 100%;
+}
+
+
 .title-sessao {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    text-align: left;
+}
+
+.title-sessao span {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    color: var(--color-textos-principais);
+    font-size: 3.5rem;
+}
+
+.texto-historia {
+    color: var(--color-font-cinza);
+    font-size: 1.6rem;
+    margin: 1.75rem 0 1.75rem;
+    line-height: 1.5;
+}
+
+div.imagem-nossa-historia {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-nossa-historia img {
+    width: 95%;
+    height: auto;
+    border-radius: 1.1rem;
+}
+
+.sessao-nossos-pilares {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    height: auto;
+    min-height: 18rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2.title-sessao-cards {
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 0 5rem;
+    text-align: center;
+}
+
+
+h2.title-sessao-cards span {
     font-size: var(--tamanho-title-sessao);
     color: var(--color-textos-principais);
 }
 
 .container-cards {
     width: 100%;
-    padding: 3rem 0 3rem;
-    height: auto;
-    min-height: 15rem;
+    max-width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    gap: 1.6rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    padding: 0 3rem 0;
 }
 
-div.cards-sobre {
-    width: 40rem;
-    height: 23rem;
+.cards-pilares {
+    flex-shrink: 1;
     border-radius: 1rem;
+    box-shadow: 1px 6px 18px -10px #7c7c7c;
+    width: 25%;
+    height: auto;
+    min-height: 25rem;
+    padding: 4rem 1rem 0rem 2rem;
+}
+
+.cards-content {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.cards-content h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--color-textos-principais);
+    margin-bottom: 1rem;
+}
+
+.conteudo-cards {
+    color: var(--color-font-cinza);
+    font-size: 1.5rem;
+}
+
+.cards-content svg {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 0 1rem;
+}
+
+/***************
+*Sessao Lideres*
+***************/
+
+.sessao-nossa-lideranca {
+    width: 100%;
+    min-height: 45rem;
+    padding: 3rem 0 0;
+    margin: 0;
+}
+
+.cards-lideranca-container {
+    padding: 0 10rem 0;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+
     display: flex;
-    gap: .8rem;
+    flex: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cards-lideranca {
+    flex-shrink: 1;
+    margin: 0 auto;
+    width: 30%;
+    height: auto;
+    min-height: 30rem;
+    text-align: center;
+
+    justify-items: center;
+}
+
+.icone {
+    width: auto;
+    height: auto;
+    background-color: var(--color-font-cinza-fraco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.nome-lider {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--color-textos-principais);
+}
+
+.funcao-cargo {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
+    color: var(--color-hover);
+}
+
+.info-lider {
+    color: var(--color-font-cinza);
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+/*
+*************
+Sessão Premios
+*************
+*/
+
+.sessao-faixa-certificados {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    min-height: 40rem;
+    text-align: center;
+
+    background-color: var(--color-hover);
+    color: var(--color-bordas);
+
+    padding: 0;
+    margin: 0;
+}
+
+.sessao-faixa-certificados>.container>h2.title-faixa-premios {
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 2.8rem;
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: #e8e8e8;
+}
+
+.subtitle-sessao-premios {
+    font-size: 1.6rem;
+    margin: auto;
+    width: 45%;
+    margin-bottom: 4rem;
+}
+
+.faixa-card1 {
+    flex-shrink: 1;
+    width: 40%;
+    display: flex;
+    gap: 3rem;
+}
+
+
+.card-premios {
+    max-width: 50%;
+    width: 50%;
+    height: 13rem;
+    border-radius: 1rem;
+    border: 1px solid #cbcbcbbd;
+    background-color: #e1e1e123;
+}
+
+.card-premios>.container,
+.content-premios {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    text-align: left;
-    border: 1px solid var(--color-font-cinza-fraco);
-    transition: all 0.5s ease-in-out;
-    padding: 0 5rem 0;
-}
-
-div.cards-sobre:hover {
-    border: 1px solid var(--color-font-primary);
-}
-
-.cards-sobre svg {
-    width: 5rem;
-    height: 5rem;
-}
-
-h2.title-card strong {
-    font-size: 2.3rem;
-    font-weight: 400;
-}
-
-p.texto-card {
-    font-size: var(--tamanho-textos);
-    color: var(--color-font-cinza);
-}
-
-.faixa-informacoes {
-    width: 100%;
-    height: 21rem;
-    background-color: var(--color-hover);
-    color: var(--color-bordas);
-    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 22rem;
 }
 
-.projetos,
-.experiencia,
-.clientes {
-    width: 20rem;
-    color: var(--color-bordas);
-    text-align: center;
+.card-premios svg {
+    stroke: #e7fbf1;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
 }
 
-.numero-projetos,
-.anos-experiencia,
-.porcentagem-clientes {
-    font-size: 5rem;
-}
-
-.text-info {
-    width: 100%;
-    font-size: 1.6rem;
-}
-
-.sessao-transformar-negocio {
-    width: 100%;
-    height: 40rem;
-    padding: 3rem 0 3rem;
-    min-height: 100%;
-    text-align: center;
-}
-
-.sessao-transformar-negocio>.container .title-sessao {
-    margin-top: 5rem;
-}
-
-.subtitle-sessao,
-.sessao-transformar-negocio a {
-    width: 50%;
-    margin: 3rem auto 0;
-}
-
-.subtitle-sessao {
-    color: var(--color-font-cinza);
-    margin-bottom: 8rem;
-    font-size: var(--tamamho-subtitulos);
-}
-
-.sessao-transformar-negocio a.fale-conosco {
-    margin-left: -1rem;
-    margin-top: 3rem;
-    border-radius: 1rem;
-    color: var(--color-bordas);
-    background-color: var(--color-font-primary);
-    padding: 1.5rem 1rem;
-    font-size: var(--tamanho-textos);
-    text-align: center;
-}
-
-a.fale-conosco:hover {
-    background-color: var(--color-hover);
+.premios {
+    font-size: 1.7rem;
 }
 
 /*
@@ -366,7 +479,6 @@ a.fale-conosco:hover {
 Sessão Footer
 *************
 */
-
 .footer-site {
     width: 100%;
     height: auto;
@@ -412,7 +524,7 @@ Sessão Footer
     font-size: 1.7rem;
 }
 
-.contato{
+.contato {
     width: 100%;
     min-height: 100%;
     height: 100%;
@@ -460,8 +572,11 @@ Sessão Footer
     text-align: center;
 }
 
+/*****************************************/
 
-/* MEDIA QUERIES */
+/**************
+*Media QUERIES*
+**************/
 
 @media(max-width:768px) {
 
@@ -510,73 +625,64 @@ Sessão Footer
         color: var(--color-font-primary);
     }
 
-    .sessao-inicio {
-        text-align: left;
+    .sessao-nossa-historia {
         height: auto;
     }
 
-    .container-inicio {
-        width: 100%;
-        margin: auto;
-        height: auto;
-        padding: 5rem .8rem 5rem 1rem;
-    }
-
-    h1,
-    .subtitle,
-    .faixa-botoes {
-        text-align: left;
-        min-width: 100%;
+    .sessao-nossa-historia>.container {
         flex-direction: column;
-        justify-content: start;
-        align-items: start;
+        width: 95%;
     }
 
-    .sessao-sobre {
+    .container-nossa-historia {
+        width: 100%;
+        max-width: 100%;
         height: auto;
-        padding: 5rem 0;
+        padding: 1rem 1rem 0;
     }
 
-}
-
-@media (max-width: 991px) {
-    .sessao-sobre {
+    div.imagem-nossa-historia {
+        max-width: 100%;
+        width: 100%;
         height: auto;
     }
 
-    .container-cards {
+    .imagem-nossa-historia img {
+        max-width: 95%;
+        width: 95%;
+        min-width: 95%;
+        height: auto;
+    }
+
+    .cards-lideranca-container {
+        height: auto;
+        padding: 1rem 1rem 2rem;
         flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 3rem 0 3rem;
-        gap: 10px;
     }
 
-    div.cards-sobre {
-        width: 90%;
-        max-width: 90%;
+    .sessao-faixa-certificados {
+        padding: 0 0 5rem;
+        margin: 0 0 5rem;
+    }
+
+    .sessao-faixa-certificados>.container-cards {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+
+
+    .faixa-card1 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .card-premios {
+        min-width: 90%;
+        width: 95%;
         margin: auto;
-        text-align: center;
-    }
-
-    div.cards-sobre svg {
-        margin: 0 auto 0;
-    }
-
-    .faixa-informacoes {
-        flex-wrap: wrap;
-        height: auto;
-        padding: 3rem 0 3rem;
-        gap: 0;
-    }
-
-    .sessao-transformar-negocio {
-        height: auto;
-    }
-
-    .subtitle-sessao {
-        width: 100%;
-        text-align: center;
     }
 
     .footer-site {
@@ -598,8 +704,29 @@ Sessão Footer
     }
 
     .footer-copyright {
-        margin:3rem auto 3rem;
+        margin: 3rem auto 3rem;
         font-size: 1.5rem;
         text-align: center;
+    }
+}
+
+@media(max-width: 991px) {
+    body {
+        max-width: 100%;
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .sessao-nossos-pilares .container-cards {
+        flex-direction: column;
+    }
+
+    .cards-pilares {
+        width: 95%;
+    }
+
+    .sessao-nossos-pilares .container-cards {
+        padding: 0 3rem 2rem;
+        flex-direction: column;
     }
 }
