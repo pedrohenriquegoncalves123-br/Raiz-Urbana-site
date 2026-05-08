@@ -293,7 +293,7 @@ h2.title-sessao-cards span {
     flex-wrap: wrap;
     gap: 2rem;
 
-    padding: 0 3rem 0;
+    padding: 0 1rem 0;
 }
 
 .cards-pilares {
@@ -669,7 +669,7 @@ Sessão Footer
         width: 100%;
         height: auto;
         flex-direction: column;
-        padding-bottom: 2rem;
+        padding: 0 1rem 0;
     }
 
 
