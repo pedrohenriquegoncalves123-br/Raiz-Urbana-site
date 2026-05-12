@@ -1,0 +1,638 @@
+:root {
+    --color-font-primary: #0cba4b;
+    --color-font-secondary: rgb(13, 155, 89);
+    --color-hover: #09a241;
+    --background-suave: #e7fbf1;
+    --color-font-preta: #0c0d12;
+    --color-font-cinza: #575e5de0;
+    --color-font-cinza-fraco: #e5e5e5cf;
+    --color-font-footer: #9a9ea2;
+
+    /* Fontes */
+
+    --color-textos-principais: #111827;
+    --color-textos-secundarios: #1f2937;
+    --color-bordas: #e5e7eb;
+    --backgrounds-claros: #f9fafb;
+
+    /* Tamanho da fonte */
+
+    --tamanho-title-sessao: 3.7rem;
+    --tamamho-subtitulos: 2rem;
+    --tamanho-textos: 1.6rem;
+}
+
+/* Estilos globais */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    margin: 0 auto 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    margin: auto;
+    width: 100%;
+}
+
+html {
+    margin: auto;
+    scroll-behavior: smooth;
+    min-width: 100%;
+    font-size: 62.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgrounds-claros);
+    max-width: 1750px;
+}
+
+.cabecalho {
+    background-color: var(--backgrounds-claros);
+    width: 100%;
+    max-width: 1750px;
+    height: 5em;
+    margin: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    position: fixed;
+    z-index: 99999;
+}
+
+.cabecalho .container-menu {
+    margin: auto;
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-menu {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    padding-left: 25px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: start;
+}
+
+.logo-link {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+.logo-link p {
+    padding: .5rem;
+    font-size: 17px;
+    height: 35px;
+    font-weight: 600;
+}
+
+.nav-bar {
+    width: 70%;
+    height: 100%;
+}
+
+.menu {
+    width: 80%;
+    height: 100%;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu a {
+    padding: 1rem 2rem;
+    font-size: 14px;
+    color: var(--color-textos-principais);
+}
+
+.menu a:hover {
+    color: var(--color-hover);
+}
+
+.hamburguer,
+#tg-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+
+.conteudo-principal {
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.banner-pagina {
+    height: 35rem;
+    max-width: 100%;
+    width: 100%;
+    background-color: var(--background-suave);
+}
+
+.banner-pagina>.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.title-banner {
+    max-width: 100%;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    margin-bottom: 3rem;
+    margin: 0;
+    text-align: center;
+}
+
+.title-banner span {
+    font-size: 5rem;
+    color: var(--color-textos-principais);
+}
+
+.subtitle {
+    color: var(--color-font-cinza);
+    font-size: 1.8rem;
+    margin: 0;
+    width: 50%;
+    text-align: center;
+}
+
+/**************
+*Sessao nossos servicos*
+**************/
+
+.sessao-servicos {
+    margin-top: 5rem;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faixa-cards {
+    min-width: 98%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 0 4rem;
+}
+
+.card-serv {
+    flex-shrink: 1;
+    flex-grow: 1;
+    width: 25%;
+    height: 40rem;
+    background-color: var(--backgrounds-claros);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem 0;
+    border-radius: 1rem;
+    border: 1px solid var(--color-font-cinza-fraco);
+}
+
+.card-serv:hover {
+    box-shadow: 1px 1px 20px -5px #918f8f;
+    outline: 0.1rem solid var(--color-hover);
+}
+
+.card-serv .icon {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.icon svg {
+    width: 5rem;
+    height: 5rem;
+}
+
+.container-card h3 {
+    width: 100%;
+    height: auto;
+    font-size: calc(.8rem + var(--tamanho-textos));
+    color: var(--color-textos-principais);
+    margin: .5rem 0 1rem;
+    font-weight: 500;
+
+}
+
+.container-card p {
+    width: 100%;
+    height: auto;
+    font-size: var(--tamanho-textos);
+    color: var(--color-textos-secundarios);
+
+    margin: 1rem 0 2rem;
+}
+
+.container-card ul.especialidade-area {
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    font-size: 1.2rem;
+    color: var(--color-font-cinza);
+}
+
+.confirm-especi {
+    color: var(--color-hover);
+    font-size: 1.7rem;
+    margin-right: .5rem;
+}
+
+/**************
+*Sessao nossos processos*
+**************/
+
+
+h2.title-sessao-cards {
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 0 5rem;
+    text-align: center;
+}
+
+
+h2.title-sessao-cards span {
+    font-size: var(--tamanho-title-sessao);
+    color: var(--color-textos-principais);
+}
+
+.sessao-nosso-processo {
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article.container-processos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 4rem;
+}
+
+.processos{
+    text-align: center;
+    width: 20%;
+    min-height: 10rem;
+    height: auto;
+}
+
+.processos .consultas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.numero-processo {
+    margin: 0 auto 1rem;
+    padding: 1.9rem;
+
+    width: 5rem;
+    height: 5rem;
+
+    border-radius: 50%;
+    background-color: var(--color-hover);
+    color: var(--color-bordas);
+    font-size: 2rem;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.consultas h3{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--color-textos-principais);
+    width: 100%;
+
+    margin-bottom: 1.5rem;
+}
+
+.descricao-processo {
+    width: 100%;
+    height: auto;
+    font-size:var(--tamanho-textos);
+    color: var(--color-font-cinza);
+}
+
+
+/**************
+*Sessao footer*
+**************/
+
+.footer-site {
+    width: 100%;
+    height: auto;
+    padding: 0 0 5rem;
+    margin: auto;
+    background-color: var(--color-textos-principais);
+    color: var(--color-font-footer);
+    text-align: center;
+}
+
+.container-footer {
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto 3rem;
+    height: 80%;
+    border-bottom: 2px solid var(--color-font-cinza);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column-footer {
+    width: 30%;
+    height: 100%;
+    justify-items: start;
+    text-align: left;
+    padding: 5rem 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-footer a {
+    display: flex;
+    gap: .5rem;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+    color: var(--color-bordas);
+}
+
+.subtitle-logo {
+    font-size: 1.7rem;
+}
+
+.contato {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+}
+
+
+.navegacao {
+    width: 100%;
+    height: 100%;
+}
+
+.navegacao h3,
+.contato h3 {
+    font-weight: 500;
+    font-size: var(--tamamho-subtitulos);
+    color: var(--color-bordas);
+    margin: 0 0 3rem;
+}
+
+.paginas-links {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.paginas-links li a {
+    display: block;
+    font-size: 1.7rem;
+    padding: .5rem 0;
+}
+
+.paginas-links li a:hover {
+    background-color: #1f2937;
+    color: var(--color-hover);
+}
+
+.contato p {
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+}
+
+.footer-copyright {
+    margin: auto;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/**************
+*Media Queries*
+**************/
+
+@media (max-width: 767px) {
+
+    /* .nav-bar {
+        /* flex-direction: row-reverse; 
+    }*/
+
+    .menu {
+        display: none;
+    }
+
+    .hamburguer {
+        margin: 2.5rem 0 0 auto;
+        width: 50px;
+        height: 50px;
+        display: block;
+        cursor: pointer;
+    }
+
+    #tg-toggle:checked~.menu {
+        width: 100%;
+        height: auto;
+        padding: 1rem 0 1rem;
+        flex-direction: column;
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        top: 100.1%;
+        right: 0%;
+        background-color: var(--backgrounds-claros);
+        box-shadow: 2px 0px 10px -10px #000;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu a {
+        padding: 1rem 0;
+        display: block;
+        width: 100%;
+    }
+
+    .menu a:hover {
+        background-color: var(--color-bordas);
+        color: var(--color-font-primary);
+    }
+
+
+    .faixa-cards{
+        width: 98%;
+        max-width: 98%;
+        height: auto;
+        padding: 1rem auto 0;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    .card-serv{
+        width: 100%;
+        min-height: 40rem;
+    }
+    
+    .sessao-nosso-processo{
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 0 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-processos{
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .footer-site {
+        height: auto;
+        text-align: left;
+    }
+
+    .container-footer {
+        width: 90%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .column-footer {
+        text-align: left;
+        padding: 0;
+    }
+
+    .footer-copyright {
+        margin: 3rem auto 3rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+    .footer-site {
+        height: auto;
+        text-align: left;
+    }
+
+    .container-footer {
+        width: 90%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .column-footer {
+        text-align: left;
+        padding: 0;
+    }
+
+    .footer-copyright {
+        margin: 3rem auto 3rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1024px) {
+    .faixa-cards {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card-serv {
+        width: 45%;
+        max-width: 50%;
+        height: auto;
+    }
+}
