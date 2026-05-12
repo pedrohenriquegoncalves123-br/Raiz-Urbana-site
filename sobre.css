@@ -717,6 +717,11 @@ Sessão Footer
         min-width: 100%;
     }
 
+    .sessao-nossa-historia{
+        height: auto;
+        padding: 2rem 0 3rem;
+    }
+
    .sessao-nossa-historia .container {
         flex-direction: column;
         height: auto;
