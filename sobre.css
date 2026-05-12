@@ -717,11 +717,21 @@ Sessão Footer
         min-width: 100%;
     }
 
-    .sessao-nossa-historia .container{
+   .sessao-nossa-historia .container {
         flex-direction: column;
         height: auto;
     }
 
+    .container-nossa-historia {
+        width: 100%;
+        height: auto;
+        padding: 1rem 1rem 0;
+    }
+
+    div.imagem-nossa-historia {
+        width: 100%;
+        height: auto;
+    }
     .sessao-nossos-pilares .container-cards {
         flex-direction: column;
     }
